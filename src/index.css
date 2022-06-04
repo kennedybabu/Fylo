@@ -12,6 +12,8 @@
   li {
     @apply cursor-pointer;
     @apply list-none;
-    @apply m-4
+    @apply mx-4
   }
 }
+
+

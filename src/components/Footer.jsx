@@ -11,9 +11,9 @@ const Footer = () => {
   return (
     <div className='w-full h-full bg-[#0b1523] text-white'>
         {/* container */}
-        <div className='relative w-full flex pt-10 flex-col px-8 md:pt-[200px] md:pb-8'>
+        <div className='relative w-full pt-[280px] flex  flex-col px-8 md:pt-[250px] md:pb-8'>
             <div className='w-full'>
-                <img className='w-[150px]' src={Logo} alt="logo" />
+                <img className='w-[120px] sm:w-[150px]' src={Logo} alt="logo" />
             </div>
             <div className='grid lg:grid-cols-4 md:grid-cols-2 mt-8 gap-4' >
                 <div className='flex justify-between'>
@@ -46,8 +46,8 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className='flex gap-6 pl-4'>
-                    <div className=''>
+                <div className='flex gap-20 md:gap-4 pl-4 pb-4 sm:pb-0'>
+                    <div>
                         <FaFacebookF className='hover:scale-110 hover:text-cyan-300 hover:border-cyan-300 text-2xl cursor-pointer duration-200 border-2 rounded-full' />
                     </div>
                     <div>
@@ -58,20 +58,19 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='absolute top-[-50px] pb-2 rounded-md max-w-[1000px] lg:w-[900px] md:h-[230px] flex flex-col items-center mx-auto bg-[#1c2531] shadow-md'>
-                <div className='w-full text-center mt-4 p-4'>
+            <div name='sign-in' className='w-[90%] inset-x-auto absolute md:h-auto top-[-50px] pb-2  rounded-md lg:w-[900px] sm:flex flex-col items-center left-1/2 -translate-x-1/2 bg-[#1c2531] shadow-md'>
+                <div className='w-full p-2 text-center mt-4 md:p-4'>
                     <p className='text-3xl font-bold'>Get early access today</p>
                     <p className='max-w-[700px] mx-auto mt-2'>It only takes a minute to sign up and our free starter tier is extremely generous.If you have any questions
                         our support team would be happy to help you.
                     </p>
                 </div>
-                <div>
-                    <input type="text" placeholder='email@example.com' className='rounded-[30px] py-2 pr-28 pl-4 mt-4'/>
+                <div className='flex flex-col items-center'>
+                    <input type="text" placeholder='email@example.com' className='w-[90%] rounded-[30px] py-2 md:pr-28 pl-4 mt-4 text-gray-500 active:outline-none focus:outline-none'/>
                     <button className='py-2 px-8 rounded-3xl m-4 bg-gradient-to-r from-cyan-500 to-blue-500'><span className='font-bold'>Get Started For Free</span></button>
                 </div>
             </div>
         </div>
-
     </div>
   )
 }

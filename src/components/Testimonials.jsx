@@ -6,10 +6,10 @@ import { FaQuoteLeft } from 'react-icons/fa'
 
 const Testimonials = () => {
   return (
-    <div className='px-4 pt-[50px] md:pt-2 w-full h-full bg-[#1c2431] text-white pb-10 lg:px-14 md:pb-[100px]'>
+    <div name='testimonials' className='px-4 pt-[50px] md:pt-2 w-full h-full bg-[#1c2431] text-white pb-10 lg:px-14 md:pb-[100px]'>
 
         {/* container */}
-        <div className='px-2 relative w-full grid md:grid-cols-3 gap-4 md:px-8'>
+        <div className='pb-[50px] px-2 relative w-full grid md:grid-cols-3 gap-4 md:px-8'>
 
             <FaQuoteLeft className='z-[1] absolute text-6xl top-[-35px] left-[20px] text-cyan-300'/>
 

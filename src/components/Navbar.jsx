@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Logo from '../assets/logo.svg'
 import {GoThreeBars} from 'react-icons/go'
 import {FaTimes} from 'react-icons/fa'
+import { Link } from "react-scroll";
 
 
 const Navbar = () => {
@@ -17,9 +18,15 @@ const Navbar = () => {
 
         {/* navlinks */}
         <div className='hidden md:flex font-bold'>
-            <li className='hover:text-cyan-300 duration-300'>Features</li>
-            <li className='hover:text-cyan-300 duration-300'>Team</li>
-            <li className='hover:text-cyan-300 duration-300'>Sign In</li>
+            <Link activeClass="active" to="features" smooth={true} duration={300} className='cursor-pointer hover:text-cyan-300 duration-300 m-4'>
+                Features
+            </Link>
+            <Link activeClass="active" to="testimonials" smooth={true} duration={300} className='cursor-pointer hover:text-cyan-300 duration-300 m-4'>
+                Team
+            </Link>
+            <Link activeClass="active" to="sign-in" smooth={true} duration={300} className='cursor-pointer hover:text-cyan-300 duration-300 m-4'>
+                Sign In
+            </Link>          
         </div>
 
         {/* mobile-links */}

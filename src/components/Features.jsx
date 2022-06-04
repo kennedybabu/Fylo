@@ -6,7 +6,7 @@ import Security from '../assets/icon-security.svg'
 
 const Features = () => {
   return (
-    <div className='pt-8 h-full bg-[#1c2431] md:w-full text-white flex items-center justify-center px-8 lg:pt-32'>
+    <div name='features' className='pt-8 h-full bg-[#1c2431] md:w-full text-white flex items-center justify-center px-8 lg:pt-32'>
         {/* container */}
         <div className='grid sm:grid-cols-2 gap-20 my-8'>
 
